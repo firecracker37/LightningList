@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningList", "LightningList\LightningList.csproj", "{35EC4CFC-42D8-458C-ACC0-4A13EC666DCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35EC4CFC-42D8-458C-ACC0-4A13EC666DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EC4CFC-42D8-458C-ACC0-4A13EC666DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EC4CFC-42D8-458C-ACC0-4A13EC666DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EC4CFC-42D8-458C-ACC0-4A13EC666DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {759FBA10-6C42-42D9-B155-1ED08EC23593}
+	EndGlobalSection
+EndGlobal

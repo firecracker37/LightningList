@@ -1,0 +1,25 @@
+﻿@model LightningList.Models.TodoList
+<div>
+    <article>
+        <header>
+            <h3>@Model.Name</h3>
+        </header>
+        
+        <ul>
+            @foreach (var item in Model.Items)
+            {
+                <li><span class="@(item.IsComplete ? "complete" : "active")" hx-post="/Todo/ToggleComplete/@item.Id" hx-target="closest div">@item.Task</span> - <span class="delete" hx-post="/Todo/DeleteTask/@item.Id" hx-target="closest div"><i class="lni lni-trash-can"></i></span> | <i class="lni lni-pencil"></i></li>
+            }
+            <li>
+                <form hx-post="/Todo/AddItem/@Model.Id" hx-swap="outerHTML" hx-target="closest div">
+                    <input type="text" name="Task" required placeholder="Enter a task" />
+                    <button type="submit">Add Item</button>
+                </form>
+            </li>
+        </ul>
+        <footer>
+            <p>List Id: @Model.Id</p>
+            <p><a href="/Todo?Id=@Model.Id">List Link</a></p>
+        </footer>
+</article>
+</div>

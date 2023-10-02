@@ -1,0 +1,16 @@
+﻿.complete {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.delete {
+    color: darkred;
+}
+
+li {
+    list-style: none;
+}

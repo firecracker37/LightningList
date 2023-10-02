@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form hx-post="/Todo/Create" hx-swap="outerHTML">
+    <input type="text" name="Name" required placeholder="Enter list name" />
+    <button type="submit">Create Todo List</button>
+</form>
